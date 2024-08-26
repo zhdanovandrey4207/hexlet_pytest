@@ -28,3 +28,10 @@ def test_pop_with_empty_stack():
     stack = []
     with pytest.raises(IndexError):
         stack.pop()
+
+def test_with_fix():
+    with open('tests/fixtures/start.txt') as f:
+        start_text = f.read()
+    with open('tests/fixtures/fin.txt') as h:
+        fin_text = h.read()
+    assert reverse(start_text).strip() == fin_text.strip()
