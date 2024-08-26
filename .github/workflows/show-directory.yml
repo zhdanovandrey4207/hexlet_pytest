@@ -1,0 +1,15 @@
+# file: .github/workflows/show-directory.yml
+name: show-directory
+# on - определяет события, которые запускают workflow
+on: push
+jobs:
+# build - произвольно выбранное имя задания, их м.б. больше одного
+    build:
+    # операционная система для работы воркфлоу
+        runs-on: ubuntu-latest
+        steps: # список шагов
+               # экшен - выполняет задачу
+            - uses: actions/checkout@v4
+            # run - произвольная bash-команда
+            # ls - la - вывод содержимого репозитория
+            - run: make say-hello
