@@ -1,1 +1,1 @@
-![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+[![hello-world](https://github.com/zhdanovandrey4207/hexlet_pytest/actions/workflows/main.yml/badge.svg)](https://github.com/zhdanovandrey4207/hexlet_pytest/actions/workflows/main.yml)
